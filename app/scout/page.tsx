@@ -2,6 +2,7 @@
 
 import React from "react"
 import { motion } from "framer-motion"
+import type { MotionProps } from "framer-motion"
 import { 
   Camera, 
   Search, 
@@ -13,7 +14,7 @@ import {
   Check
 } from "lucide-react"
 
-const fadeUp = {
+const fadeUp: MotionProps = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
